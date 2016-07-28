@@ -18,7 +18,7 @@ demo/test-built.js: demo/test.js src/**/*.js
 	node_modules/.bin/browserify -d --outfile $@ -t babelify $<
 
 release/prosemirror.js: release/release.js src/**/*.js
-	node_modules/.bin/browserify -d -t babelify -s prosemirror $< > $@
+	node_modules/.bin/browserify -d -t babelify -s ProseMirror $< > $@
 
 release/prosemirror.min.js: release/release.js src/**/*.js
-	node_modules/.bin/browserify -d -t babelify -s prosemirror $< | node_modules/.bin/uglifyjs - -m > $@
+	node_modules/.bin/browserify -d -t babelify -s ProseMirror $< | node_modules/.bin/uglifyjs - -m > $@
