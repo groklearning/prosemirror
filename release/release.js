@@ -4,6 +4,7 @@ const menu = require("../src/menu")
 const inputrules = require("../src/inputrules")
 const commands = require("../src/commands")
 const history = require("../src/history")
+const browserkeymap = require("browserkeymap")
 
 module.exports = {
   edit: edit,
@@ -12,4 +13,5 @@ module.exports = {
   inputrules: inputrules,
   commands: commands,
   history: history,
+  Keymap: browserkeymap,
 };
